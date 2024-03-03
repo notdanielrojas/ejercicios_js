@@ -1,6 +1,3 @@
-const btnCalculadora = document.getElementById("btn-calculadora"); // Selecciona el botón para mostrar la calculadora
-const btnOtraPagina = document.getElementById("btn-otra-pagina"); // Selecciona el botón para mostrar otra página
-
 // Genera un número aleatorio entre 1 y 999 para que el usuario adivine
 const numeroAleatorio = Math.floor(Math.random() * 999) + 1;
 
