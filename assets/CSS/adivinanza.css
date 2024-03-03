@@ -1,0 +1,48 @@
+/* Estilos generales */
+body {
+  background-color: whitesmoke;
+  color: #3F3738;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.container h1 {
+  margin: 3rem 0;
+}
+
+/* Estilos para los valores */
+.values select {
+  padding: 1rem;
+}
+
+.values select option {
+  text-align: center;
+}
+
+/* Estilos para los botones */
+.botones {
+  margin-top: 20px; /* Espacio entre los botones y la calculadora */
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+}
+
+.botones button {
+  margin: 0 10px; /* Espacio entre los botones */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none;
+  border-radius: 5px;
+  background-color: darkgreen; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 16px; /* Tamaño del texto */
+  cursor: pointer;
+}
+
+.botones button:hover {
+  background-color: green; /* Color de fondo al pasar el cursor */
+}

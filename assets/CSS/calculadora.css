@@ -1,0 +1,86 @@
+/* Estilos generales */
+.contenedor {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Toma el 100% de la altura de la ventana */
+}
+
+.calculadora {
+  display: flex; /* Contenedor flexible */
+  flex-direction: column; /* Los elementos hijos se apilan verticalmente */
+  align-items: center; /* Centra horizontalmente los elementos hijos */
+  width: 30rem; /* Ancho de la calculadora */
+  padding: 2rem; /* Relleno interior */
+  border: 0.2rem solid #ccc; /* Borde sólido */
+  border-radius: 0.1rem; /* Radio de borde */
+  box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1); /* Sombra */
+  margin: 0 auto; /* Centro horizontalmente */
+}
+
+/* Estilos para los inputs y el select */
+input[type="number"],
+select {
+  margin: 0.7rem 0; /* Agrega espacio vertical */
+  padding: 1rem; /* Relleno interior */
+  width: calc(100% - 1rem); /* Ajusta el ancho */
+  border: 0.1rem solid #ccc; /* Borde sólido */
+  border-radius: 0.5rem; /* Radio de borde */
+  font-size: 1.6rem; /* Tamaño de fuente */
+  text-align: center; /* Texto centrado */
+}
+
+select {
+  appearance: none; /* Quita el estilo predeterminado del select */
+  background-color: #f9f9f9; /* Color de fondo */
+}
+
+/* Estilos para el botón */
+#calcular {
+  margin-top: 1rem; /* Margen superior */
+  padding: 1rem 2rem; /* Relleno interior */
+  border: none; /* Sin borde */
+  border-radius: 0.5rem; /* Radio de borde */
+  background-color: darkgreen; /* Color de fondo */
+  color: white; /* Color de texto */
+  font-size: 1.6rem; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar sobre él */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+#calcular:hover {
+  background-color: #008000; /* Cambia el color de fondo al pasar el cursor sobre él */
+}
+
+/* Estilos para el resultado */
+.resultado {
+  margin-top: 2rem; /* Margen superior */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.resultado p {
+  font-size: 2.4rem; /* Tamaño de fuente */
+  margin: 0; /* Elimina el margen predeterminado para evitar espacio adicional */
+}
+
+/* Estilos para los botones */
+.botones {
+  margin-top: 20px; /* Espacio entre los botones y la calculadora */
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+}
+
+.botones button {
+  margin: 0 10px; /* Espacio entre los botones */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none;
+  border-radius: 5px;
+  background-color: darkgreen; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 16px; /* Tamaño del texto */
+  cursor: pointer;
+}
+
+.botones button:hover {
+  background-color: green; /* Color de fondo al pasar el cursor */
+}

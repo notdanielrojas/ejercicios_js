@@ -1,0 +1,70 @@
+/* Estilos generales */
+.contenedor {
+  display: flex; /* Utiliza el modelo de caja flexible */
+  flex-direction: column; /* Apila los elementos verticalmente */
+  justify-content: center; /* Centra verticalmente los elementos */
+  align-items: center; /* Centra horizontalmente los elementos */
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+}
+
+/* Estilos para las secciones de Celsius y Fahrenheit */
+.celsius,
+.fahrenheit {
+  display: flex; /* Utiliza el modelo de caja flexible */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  margin-bottom: 2rem; /* Agrega espacio entre las secciones */
+}
+
+/* Estilos para las etiquetas de los campos de entrada */
+label {
+  margin-right: 1rem; /* Agrega espacio a la derecha de la etiqueta */
+  font-weight: bold; /* Hace que las etiquetas sean más destacadas */
+  font-size: 1.6rem; /* Tamaño de fuente para las etiquetas */
+}
+
+/* Estilos para el campo de entrada */
+input {
+  padding: 1rem; /* Añade relleno interior */
+  width: 23rem; /* Ancho de los campos de entrada */
+  border: 0.1rem solid #ccc; /* Borde sólido con color gris */
+  border-radius: 0.5rem; /* Borde redondeado */
+  font-size: 1.6rem; /* Tamaño de fuente */
+  text-align: center; /* Centra el texto horizontalmente */
+  transition: border-color 0.3s; /* Transición suave para el cambio de color del borde */
+  background-color: #f9f9f9; /* Color de fondo */
+  color: #333; /* Color del texto */
+}
+
+/* Estilos para el hover y foco del campo de entrada */
+input:hover,
+input:focus {
+  border-color: #999; /* Cambia el color del borde al pasar el cursor o enfocar el campo */
+}
+
+/* Estilos para los placeholders */
+input::placeholder {
+  color: #999; /* Color del placeholder */
+}
+
+/* Estilos para los botones */
+.botones {
+  margin-top: 20px; /* Espacio entre los botones y la calculadora */
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+}
+
+.botones button {
+  margin: 0 10px; /* Espacio entre los botones */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none;
+  border-radius: 5px;
+  background-color: darkgreen; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 16px; /* Tamaño del texto */
+  cursor: pointer;
+}
+
+.botones button:hover {
+  background-color: green; /* Color de fondo al pasar el cursor */
+}

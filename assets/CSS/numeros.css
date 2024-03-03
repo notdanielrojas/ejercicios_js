@@ -1,0 +1,70 @@
+/* Contenedor principal */
+.contenedor {
+  display: flex; /* Se establece como contenedor flexible */
+  flex-direction: column; /* Los elementos hijos se apilan verticalmente */
+  justify-content: center; /* Los elementos hijos se centran verticalmente */
+  align-items: center; /* Los elementos hijos se centran horizontalmente */
+  height: 100vh; /* El contenedor ocupa el 100% del alto de la ventana */
+}
+
+/* Estilos para los campos de entrada numéricos y el select */
+input[type="number"], /* Estilos aplicados a los campos de entrada numéricos */
+select { /* Estilos aplicados al elemento select */
+  margin: 0.7rem 0; /* Agrega un espacio vertical alrededor del elemento */
+  padding: 1rem; /* Agrega relleno alrededor del contenido del elemento */
+  width: calc(10% - 1rem); /* Calcula el ancho del elemento */
+  border: 0.1rem solid #ccc; /* Establece el borde del elemento */
+  border-radius: 0.5rem; /* Establece el radio de borde del elemento */
+  font-size: 1.6rem; /* Tamaño de fuente del texto del elemento */
+  text-align: center; /* El texto se alinea al centro dentro del elemento */
+}
+
+/* Estilos para el botón de acción */
+button#chequear { /* Estilos aplicados al botón con el id "chequear" */
+  margin-top: 1rem; /* Agrega margen superior al botón */
+  padding: 1rem 2rem; /* Agrega relleno alrededor del contenido del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 0.5rem; /* Establece el radio de borde del botón */
+  background-color: darkgreen; /* Establece el color de fondo del botón */
+  color: white; /* Establece el color del texto del botón */
+  font-size: 1.6rem; /* Tamaño de fuente del texto del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+button#chequear:hover { /* Estilos aplicados al botón al pasar el cursor sobre él */
+  background-color: #008000; /* Cambia el color de fondo del botón */
+}
+
+/* Estilos para el resultado */
+.resultado { /* Estilos aplicados al contenedor del resultado */
+  margin-top: 2rem; /* Agrega margen superior al contenedor del resultado */
+  text-align: center; /* Alinea el contenido del contenedor al centro */
+}
+
+.resultado p { /* Estilos aplicados a los párrafos dentro del contenedor del resultado */
+  font-size: 2.4rem; /* Tamaño de fuente del texto */
+  margin: 0; /* Elimina el margen predeterminado para evitar espacio adicional */
+}
+
+/* Estilos para los botones */
+.botones {
+  margin-top: 20px; /* Espacio entre los botones y la calculadora */
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+}
+
+.botones button {
+  margin: 0 10px; /* Espacio entre los botones */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none;
+  border-radius: 5px;
+  background-color: darkgreen; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 16px; /* Tamaño del texto */
+  cursor: pointer;
+}
+
+.botones button:hover {
+  background-color: green; /* Color de fondo al pasar el cursor */
+}

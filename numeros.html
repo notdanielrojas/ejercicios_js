@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/normalize.css" />
+    <link rel="stylesheet" href="./assets/CSS/global.css" />
+    <link rel="stylesheet" href="./assets/CSS/numeros.css" />
+    <title>Numeros</title>
+  </head>
+  <body>
+    <!-- Contenedor principal -->
+    <div class="contenedor">
+      <!-- Etiqueta para ingresar un número -->
+      <label for="input-1">Ingrese un número.</label>
+      <!-- Campo de entrada para el número -->
+      <input type="number" min="0" id="input-1" />
+      <!-- Botón para chequear el número -->
+      <button id="chequear">Chequear</button>
+      <!-- Contenedor para mostrar el resultado -->
+      <div class="resultado">
+        <!-- Párrafo para mostrar el número verificado -->
+        <p id="valor"></p>
+      </div>
+      <!-- Botones para cambiar de índice -->
+      <div class="botones">
+        <button onclick="window.location.href = 'calculadora.html';">←</button>
+        <button onclick="window.location.href = 'temperatura.html';">→</button>
+      </div>
+    </div>
+
+    <!-- Incluir el archivo JavaScript -->
+    <script src="./assets/JS/numeros.js"></script>
+  </body>
+</html>

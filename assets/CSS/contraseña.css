@@ -1,0 +1,85 @@
+/* Estilos generales */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilos para la sección de contraseña */
+.contraseña {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem; /* Espacio entre la sección de contraseña y el botón */
+}
+
+/* Estilos para la etiqueta de contraseña */
+label {
+  margin-bottom: 0.5rem; /* Espacio entre la etiqueta y el campo de contraseña */
+  font-size: 1.4rem; /* Tamaño de fuente para la etiqueta */
+}
+
+/* Estilos para el campo de contraseña */
+input[type="password"] {
+  padding: 1.5rem; /* Aumenta el espacio de relleno para el campo de contraseña */
+  width: 30rem; /* Define el ancho del campo de contraseña */
+  border: 0.2rem solid #ccc; /* Establece el borde del campo */
+  border-radius: 0.8rem; /* Define el radio de borde para suavizar las esquinas */
+  font-size: 1.6rem; /* Aumenta el tamaño de fuente para hacer el texto más grande */
+  text-align: center; /* Centra el texto dentro del campo */
+}
+
+/* Estilos para el placeholder del campo de contraseña */
+input[type="password"]::placeholder {
+  font-size: 1.6rem; /* Aumenta el tamaño de fuente del placeholder */
+}
+
+/* Estilos para el botón */
+.ingresar {
+  margin: 0.5rem 1rem; /* Alineación del botón con el campo de contraseña */
+  padding: 0.8rem 2rem; /* Espacio de relleno */
+  border: none;
+  border-radius: 0.5rem;
+  background-color: darkgreen; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  font-size: 1.4rem; /* Tamaño de fuente para el botón */
+  cursor: pointer;
+}
+
+.ingresar:hover {
+  background-color: green; /* Cambio de color al pasar el cursor sobre el botón */
+}
+
+/* Estilos para el resultado */
+.resultado {
+  text-align: center;
+}
+
+/* Estilos para el mensaje de resultado */
+.resultado p {
+  font-size: 1.4rem; /* Tamaño de fuente para el mensaje de resultado */
+  margin: 0; /* Eliminar margen */
+}
+
+/* Estilos para los botones */
+.botones {
+  margin-top: 20px; /* Espacio entre los botones y la calculadora */
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+}
+
+.botones button {
+  margin: 0 10px; /* Espacio entre los botones */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none;
+  border-radius: 5px;
+  background-color: darkgreen; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 16px; /* Tamaño del texto */
+  cursor: pointer;
+}
+
+.botones button:hover {
+  background-color: green; /* Color de fondo al pasar el cursor */
+}
