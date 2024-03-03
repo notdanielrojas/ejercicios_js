@@ -3,7 +3,7 @@ const inputContraseña = document.getElementById("input-1");
 const resultado = document.querySelector(".resultado p");
 
 // Agregar un event listener al campo de contraseña
-inputContraseña.addEventListener("blur", verificarContraseña);
+inputContraseña.addEventListener(verificarContraseña);
 
 // Función para verificar la contraseña
 function verificarContraseña() {
